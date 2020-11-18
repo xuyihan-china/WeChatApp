@@ -1,0 +1,35 @@
+/* pages/welcome.wxss */
+/* rpx 会响应式 响应 */
+#picWelcome{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    margin-top: 160rpx;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #aeb8eb;
+}
+.user-name{
+    margin-top: 20rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+    font-family: Microsoft Yahei;
+}
+.moto{
+    margin-top: 200rpx;
+    border: 1px solid #405fff;
+    height: 50rpx;
+    width: 200rpx;
+    border-radius: 45rpx;
+    text-align: center;
+    line-height: 50rpx;
+    background-color: aliceblue;
+}
+.motoText{
+    font-size: 25rpx;
+    font-weight: bold;
+}

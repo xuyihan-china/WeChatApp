@@ -1,0 +1,52 @@
+<!--pages/posts/posts.wxml-->
+<view>
+    <swiper indicator-dots="true" interval="2000" vertical="false" autoplay="{{true}}">
+        <!-- swiper item 是一个容器 -->
+        <swiper-item>
+            <image src="/images/images/xiaolong.jpg"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/images/iqiyi.png"></image>
+        </swiper-item>
+        <swiper-item>
+            <image src="/images/images/vr.png"></image>
+        </swiper-item>
+    </swiper>
+</view>
+<block wx:for="{{Postdata}}" wx:for-item="item">
+    <view class="post-container">
+        <view class="post-author-date">
+            <image src="{{item.avatar}}" class="post-author">
+            </image>
+            <text class="post-date">{{item.date}}</text>
+        </view>
+        <text class="post-title">{{item.title}}</text>
+        <image src="{{item.headImgSrc}}" class="postImage"></image>
+        <text class="postContent">{{item.detail}}</text>
+        <view class="postLike">
+            <image src="/images/images/icon/chat.png" class="postLikeImage"></image>
+            <text class="postLikeText">{{item.reading}}</text>
+            <image src="/images/images/icon/view.png" class="postLikeImage"></image>
+            <text class="postLikeText">{{item.collection}}</text>
+        </view>
+    </view>
+</block>
+
+<view class="post-container">
+    <view class="post-author-date">
+        <image src="/images/images/avatar/2.png" class="post-author">
+        </image>
+        <text class="post-date">{{date}}</text>
+    </view>
+    <text class="post-title">Bilibili</text>
+    <image src="/images/images/post/bl.png" class="postImage"></image>
+    <text class="postContent">伊拉克战争时期，来自美国德州的19岁技术兵比利·林恩（乔·阿尔文 Joe Alwyn
+        饰）因为一段偶然拍摄的视频而家喻户晓。那是一次规模不大却激烈非常的遭遇战，战斗中林恩所在的B班班长（范·迪塞尔 Vin Diesel 饰）遭到当地武装分子的伏击和劫持</text>
+    <view class="postLike">
+        <image src="/images/images/icon/chat.png" class="postLikeImage"></image>
+        <text class="postLikeText">96</text>
+        <image src="/images/images/icon/view.png" class="postLikeImage"></image>
+        <text class="postLikeText">112</text>
+    </view>
+
+</view>

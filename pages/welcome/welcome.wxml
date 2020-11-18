@@ -1,0 +1,10 @@
+<!--是用来编写页面骨架的-->
+<!-- width 300px height 225px -->
+<view class="container" >
+    <image src="/images/TeamLogo.png" id="picWelcome"></image>
+    <text class="user-name">Hello XuYiHan</text>
+    <view class="moto">
+        <text class="motoText">开启小程序之旅</text>
+    </view>
+</view>
+
