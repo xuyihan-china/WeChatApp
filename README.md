@@ -1,3 +1,4 @@
 # WeChatApp
 First WeChat App Development
-七月老师的前端小程序开发
+微信小程序开发
+初步了解组件等知识
